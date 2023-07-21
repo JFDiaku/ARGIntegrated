@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.Navbar, .MobileNavbar{
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.Navbar{
+  padding:.3rem 4rem;
+  position: fixed;
+  top: -80px;
+  left:0;
+  right: 0;
+  z-index: 999;
+  transition: all .5s;
+}
+
+.navContainer{
+  margin: auto;
+  display: flex;  
+  width: 100%;
+  max-width: 1500px;
+  justify-content: space-between;
+}
+
+
+
+.logoBox{
+  top:1rem;
+  width: 6rem ;
+  height: 3rem;
+}
+
+
+.logo{
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.Navlinks{
+  margin-top: auto;
+  margin: auto;
+  display: flex;
+  gap: 3rem
+}
+
+
+.navItem a:hover{
+  color: #35b416;
+}
+
+
+.ServiceLinks {
+  transform: all .5s ease;
+  display: flex;
+  flex-direction: column;
+  gap:.6rem;
+}
+
+.ServiceLinks a{
+  color: white;
+  font-size: .8em;
+}
+
+
+.ServiceLinks a:hover{
+  color: #70b644;
+  transition: all .3s;
+}
+
+.dropdown-menu{
+  width: 10rem;
+  padding: 1rem;
+  left: -45%;
+  top: 2.65rem;
+  opacity: 0;
+  visibility: hidden;
+  background-color: black;
+  position: absolute;
+  transition: all .2s ease-in-out;
+  border-radius: 10px;
+  z-index: 9999;
+}
+
+.dropdown{
+  position: relative;
+
+}
+
+.servicelink:hover + .dropdown-menu ,.dropdown-menu:hover{
+  opacity: 1;
+  visibility: visible;
+}
+

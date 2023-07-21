@@ -1,0 +1,148 @@
+p{
+  font-size: .9em;
+}
+
+.logoBox-topNav{
+  width: 10rem;
+  height: 6rem;
+}
+
+.topNavlogo{
+  width: 100%;
+  height: 100%;
+}
+
+.top-nav-section{
+  width: 100%;
+
+  background-color: white!important;
+}
+
+
+.top-nav-section2{
+  background-color: white!important;
+  padding: 0 2rem;
+}
+.topNav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topSection{
+  padding: .5rem 6rem;
+}
+
+.topNav-contact{
+  display: flex;
+  gap: 2rem;
+}
+
+.Navlinks-topNav{
+  display: flex;
+  gap: 3rem;
+}
+
+.socialLinks{
+  display: flex;
+  gap: 2rem;
+}
+
+.socialLinks .navItem{
+  margin-top: -.1rem;
+}
+
+.navItem a{
+  font-size: .8em;
+  font-weight: 500;
+}
+
+.FacebookIcon, .LinkedInIcon, .TwitterIcon{
+ margin-bottom: .5rem ;
+}
+
+.topNav-navBar{
+  display: flex;
+  padding: 1rem 5rem;
+  justify-content: space-between;
+}
+
+.topNav-contact-card{
+  display: flex;
+}
+
+.topNav-contact-card p{
+  font-weight: 500;
+}
+
+
+.mobNav-btn{
+  position: absolute;
+  top: 2.5rem;
+  left: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.mobNav-Links{
+  background-color: white;
+  padding-left: 1rem;
+  transition: all .3s;
+}
+
+.mobNav{
+
+}
+
+
+
+
+
+.mobNav-item {
+  max-width: 310px;
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+
+.mobNav-item a:hover{
+  color: #35b416;
+}
+
+.mobDropdown-menu{
+
+}
+
+
+
+.dropArrow{
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  transition: all .3s;
+  text-align: center;
+  background: none;
+  border: none;
+}
+
+.dropArrow:hover{
+  color: #35b416; 
+}
+
+@media screen and (max-width:1100px) {
+  .logoBox-topNav{
+    margin: auto;
+ }
+  .top-nav-section{
+  border: none;
+  }
+} 
+
+
+@media screen and (max-width:320px) {
+
+}
