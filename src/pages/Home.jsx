@@ -158,7 +158,7 @@ const Home = ({isMobileScreen}) => {
 
             <div className="valserv-card">
               <div className="valserv-icon">
-                < EngineeringIcon sx={{color:"#35b416", fontSize:"5em"}}/>
+                < EngineeringIcon sx={{color:"#35b416", fontSize:"7em"}}/>
               </div>
               <p className="valserv-card-cap">
                 Oilfield Services
@@ -173,7 +173,7 @@ const Home = ({isMobileScreen}) => {
 
             <div className="valserv-card">
               <div className="valserv-icon">
-                < SpeedIcon sx={{color:"#35b416", fontSize:"5em"}}/>
+                < SpeedIcon sx={{color:"#35b416", fontSize:"7em"}}/>
               </div>
               <p className="valserv-card-cap">
                 Oilfield Services
@@ -188,7 +188,7 @@ const Home = ({isMobileScreen}) => {
 
             <div className="valserv-card">
               <div className="valserv-icon">
-                < OilBarrelIcon sx={{color:"#35b416", fontSize:"5em"}}/>
+                < OilBarrelIcon sx={{color:"#35b416", fontSize:"7em",}}/>
               </div>
               <p className="valserv-card-cap">
                 Oilfield Services
@@ -203,7 +203,7 @@ const Home = ({isMobileScreen}) => {
 
             <div className="valserv-card">
               <div className="valserv-icon">
-                < ContactSupportIcon sx={{color:"#35b416", fontSize:"5em"}}/>
+                < ContactSupportIcon sx={{color:"#35b416", fontSize:"7em"}}/>
               </div>
               <p className="valserv-card-cap">
                 Oilfield Services

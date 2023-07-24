@@ -52,19 +52,19 @@ const Footer = ({isMobileScreen}) => {
 
         <ul className="footerLinks">
           <li className='navItem'>
-            <Link to='/'>Home</Link>
+            <Link to='/ARGIntegrated/'>Home</Link>
           </li>
 
           <li  className='navItem'>
-            <Link to='/about'>About</Link>
+            <Link to='/ARGIntegrated/about'>About</Link>
           </li>
 
           <li className='navItem'>
-            <Link to='/'>Our Services</Link>
+            <Link to='/ARGIntegrated/services'>Our Services</Link>
           </li>
 
           <li  className='navItem'>
-            <Link to='/about'>Contact</Link>
+            <Link to='/ARGIntegrated/about'>Contact</Link>
           </li>
         </ul>
       </div>

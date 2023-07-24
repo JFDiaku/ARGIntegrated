@@ -41,7 +41,7 @@ const TopNav = ({isMobileScreen}) => {
 
             {isMobileScreen && 
               <button onClick={() => toggleNav(!navToggled) (dropdown && toggleDropdown(false))} className="mobNav-btn">
-                <Menu sx={{fontSize:"2.5em"}}/>
+                <Menu sx={{fontSize:"2.5em", color:"#35b416"}}/>
               </button>
             }
 
@@ -83,16 +83,16 @@ const TopNav = ({isMobileScreen}) => {
         <ul className='Navlinks-topNav'>
 
             <li className='navItem'>
-              <Link to='/'>Home</Link>
+              <Link to='/ARGIntegrated/'>Home</Link>
             </li>
 
             <li  className='navItem'>
-              <Link to='/about'>About</Link>
+              <Link to='/ARGIntegrated/about'>About</Link>
             </li>
 
             <div className='dropdown'>
               <li  className='navItem'>
-                <Link className='servicelink' to='/services'>Our Services</Link> 
+                <Link className='servicelink' to='/ARGIntegrated/services'>Our Services</Link> 
 
                 <div className='dropdown-menu'>
 
@@ -121,7 +121,7 @@ const TopNav = ({isMobileScreen}) => {
             </div>
 
             <li  className='navItem'>
-                <Link to='/contact'>Contact</Link>
+                <Link to='/ARGIntegrated/contact'>Contact</Link>
             </li>
             
           </ul>
@@ -162,16 +162,16 @@ const TopNav = ({isMobileScreen}) => {
    className="mobNav">
     <ul className="mobNav-Links">
       <li className="mobNav-item">
-        <Link to='/'>Home</Link>
+        <Link to='/ARGIntegrated/'>Home</Link>
       </li>
       <li className="mobNav-item">
-        <Link to='/'>About</Link>
+        <Link to='/ARGIntegrated/about'>About</Link>
       </li>
       <div className="mob-dropdown">
         <li className="mobNav-item">
-          <Link to='/'>Our Services</Link>
+          <Link to='/ARGIntegrated/services'>Our Services</Link>
             <button onClick={() => toggleDropdown(!dropdown)} className="dropArrow">
-              {dropdown ? <ArrowDownward sx={{fontSize:"1em"}}/> : <ArrowForwardIosIcon sx={{fontSize:"1em"}}/> }
+              {dropdown ? <ArrowDownward sx={{fontSize:"1.2em"}}/> : <ArrowForwardIosIcon sx={{fontSize:"1.2em"}}/> }
             </button>
         </li>
       </div>
@@ -208,7 +208,7 @@ const TopNav = ({isMobileScreen}) => {
       </AnimatePresence>
 
       <li className="mobNav-item">
-        <Link to='/'>Contact</Link>
+        <Link to='/ARGIntegrated/contact'>Contact</Link>
       </li>
 
       

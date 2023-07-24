@@ -92,16 +92,13 @@ p{
   transition: all .3s;
 }
 
-.mobNav{
 
-}
 
 
 
 
 
 .mobNav-item {
-  max-width: 310px;
   padding: 1rem 0 1rem 0;
   display: flex;
   font-size: 1em;
@@ -113,9 +110,6 @@ p{
   color: #35b416;
 }
 
-.mobDropdown-menu{
-
-}
 
 
 
@@ -127,6 +121,7 @@ p{
   text-align: center;
   background: none;
   border: none;
+  padding: 0 .5rem;
 }
 
 .dropArrow:hover{

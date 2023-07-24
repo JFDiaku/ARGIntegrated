@@ -10,13 +10,12 @@
   background-color: black;
   margin-top: 3rem;
   justify-content: center;
-  opacity: 1;
   animation: fade .3s;
 }
 
 @keyframes fade{
   0% {
-      opacity: .5;
+      opacity: .8;
   }
   100% {
       opacity: 1;
@@ -82,6 +81,7 @@
   border-radius:20rem 0 0 20rem ;
   height: 100%;
   width: 100%;
+  transition: all 1s;
 }
 
 .resChar-cap{
@@ -93,6 +93,7 @@
 .resChar-title{
   color: white;
   font-size: 2em;
+  font-weight: 600;
   margin-top: 1rem;
 }
 
@@ -129,11 +130,6 @@
     font-size: .6em;
   }
 
-  .resChar-title{
-    font-size: 1.5em;
-  }
-  .resChar-text{
-    font-size: .6em;
-  }
+  
   
 }

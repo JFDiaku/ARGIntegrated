@@ -1,6 +1,6 @@
 import './NavBar.css'
 import ARGlogo from "../images/ARGlogo.svg"
-
+import { Link } from 'react-router-dom'
 
 const NavBar = ({isMobileScreen}) => {
   
@@ -23,43 +23,43 @@ const NavBar = ({isMobileScreen}) => {
           <nav id="navbar" className='Navbar'> 
           <div className='navContainer'>
             <div className='logoBox'>
-              <img className='logo' src={ARGlogo} title='ARGlogo'/>
+              <Link to='/ARGIntegrated/'><img className='logo' src={ARGlogo} title='ARGlogo'/></Link>
             </div>
 
             <ul className='Navlinks'>
 
               <li id='navItem1' className='navItem'>
-                <a href='#'>Home</a>
+                <Link to='/ARGIntegrated/'>Home</Link>
               </li>
 
               <li id='navItem2' className='navItem'>
-                <a href='#'>About</a>
+                <Link to='/ARGIntegrated/about'>About</Link>
               </li>
 
               <div className='dropdown'>
                 <li id='navItem3' className='navItem'>
-                  <a className='servicelink' href='#'>Our Services</a> 
+                  <Link className='servicelink' to='/ARGIntegrated/services'>Our Services</Link> 
 
                   <div className='dropdown-menu'>
 
                     <ul className='ServiceLinks'>
                       <li>
-                        <a href='#'>Drilling and field services</a>
+                        <Link to='/ARGIntegrated/'>Drilling and field services</Link>
                       </li>
                       <li>
-                        <a href='#'>Project Support Services</a>
+                        <Link to='/ARGIntegrated/'>Project Support Services</Link>
                       </li>
                       <li>
-                        <a href='#'>Reservoir Characterization & Manpower Services</a>
+                        <Link to='/ARGIntegrated/'>Reservoir Characterization & Manpower Services</Link>
                       </li>
                       <li>
-                        <a href='#'>Testing & Integrity Management</a>
+                        <Link to='/ARGIntegrated/'>Testing & Integrity Management</Link>
                       </li>
                       <li>
-                        <a href='#'>Inspection & Risk Management</a>
+                        <Link to='/ARGIntegrated/'>Inspection & Risk Management</Link>
                       </li>
                       <li>
-                        <a href='#'>Piping Certification, Maintenance & Repair</a>
+                        <Link to='/ARGIntegrated/'>Piping Certification, Maintenance & Repair</Link>
                       </li>
                     </ul>
                   </div>
@@ -67,7 +67,7 @@ const NavBar = ({isMobileScreen}) => {
               </div>
 
               <li id='navItem4' className='navItem'>
-                <a href='#'>Contact</a>
+                <Link to='/ARGIntegrated/contact'>Contact</Link>
               </li>
               
 

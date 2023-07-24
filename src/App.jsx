@@ -8,6 +8,7 @@ import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Footer from './components/Footer';
 
+
 function App() {
   
   const isMobileScreen = useMediaQuery('(max-width:1100px)');
@@ -16,10 +17,10 @@ function App() {
     <Router>
       <NavBar isMobileScreen={isMobileScreen}/>
       <Routes>
-        <Route path='/' element={<Home isMobileScreen={isMobileScreen} />}/>
-        <Route path='/about' element={<About isMobileScreen={isMobileScreen} />}/>
-        <Route path='/services' element={<Services isMobileScreen={isMobileScreen} />}/>
-        <Route path='/contact' element={<Contact isMobileScreen={isMobileScreen} />}/>
+        <Route path='/ARGIntegrated/' element={<Home isMobileScreen={isMobileScreen} />}/>
+        <Route path='/ARGIntegrated/about' element={<About isMobileScreen={isMobileScreen} />}/>
+        <Route path='/ARGIntegrated/services' element={<Services isMobileScreen={isMobileScreen} />}/>
+        <Route path='/ARGIntegrated/contact' element={<Contact isMobileScreen={isMobileScreen} />}/>
       </Routes>
       <Footer isMobileScreen={isMobileScreen} />
     </Router >
@@ -27,3 +28,4 @@ function App() {
 }
 
 export default App
+ 

@@ -117,8 +117,9 @@ background-color: white;
 }
 
 .valserv-section{
-  padding-top: 8rem;
+  padding-top: 12rem;
   margin-top: -.2rem;
+  padding-bottom:10rem;
 }
 
 .valserv-title{
@@ -128,6 +129,7 @@ background-color: white;
 }
 
 .valserv-cap{
+  font-weight: 500;
   margin-top: 1rem;
 }
 .valservices{
@@ -135,11 +137,11 @@ background-color: white;
   display: flex;
   gap: 2rem;
   justify-content: center;
-  margin-top: 4rem;
+  align-items: center;
+  margin-top: 6rem;
 }
 
 .valserv-container{
-  padding-bottom:5rem;
   text-align: center;
 }
 
@@ -148,18 +150,20 @@ background-color: white;
 }
 
 .valserv-card-cap{
-  font-size: .9em;
+  font-size: 1em;
   color:#35b416;
+  font-weight: 600;
 }
 
 .valserv-card-title{
+  font-size: 1.3em;
   margin-top: .5rem;
   font-weight: 600;
 }
 
 .valserv-card-text{
   margin-top: 1rem;
-  font-size: .8em;
+  font-size: 1em;
 }
 
 
@@ -198,11 +202,12 @@ background-color: white;
     font-weight: 500;
   }
   .valserv-section{
-    padding-top: 0;
+    padding-top: 3rem;
   }
   .valservices{
     flex-direction: column;
     align-items: center;
+    gap: 4rem;
   }
   .valserv-card{
     width: 70%;
