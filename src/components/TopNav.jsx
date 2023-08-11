@@ -25,10 +25,7 @@ const TopNav = ({isMobileScreen}) => {
   let dropClass = "mobDropdown-menu"
   dropClass += dropdown ? "-toggled" : "";
 
-  const variants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "-100%" },
-  }
+
 
   return (
    <>
@@ -179,6 +176,7 @@ const TopNav = ({isMobileScreen}) => {
       <AnimatePresence>
       {dropdown &&
       <motion.div
+
         initial={{ opacity:0, height:0}}
         animate={{ opacity:1, height:'auto'}}
         exit={{ opacity:0, height:0}}

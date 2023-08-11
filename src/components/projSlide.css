@@ -3,6 +3,7 @@
 
 
 .projSlide-container{
+  margin-top: 30rem;
   padding: 7rem;
 }
 
@@ -12,26 +13,28 @@
   border-radius: 5px;
 }
 
+.proj-right{
+  height: 25rem;
+}
+
 .proJsupport-slide{
   width: 100%;
   text-align: start;
   display: flex;
   gap: 3rem;
-  padding:0 .2rem;
+  padding: 0 0.1rem;
+  justify-content: center;
 
 }
 
 .proj-left{
-  border-top: #49ba2d solid 4px;
-  width: 60rem ;
+  width: 35% ;
 }
 
 .proj-cap{
   color: #35b416;
-  margin-top: 1rem;
   font-size: 1em;
   font-weight: 500;
-  
 }
 
 .proj-title{
@@ -59,7 +62,8 @@
     width: 100%;
   }
   .projSlide-container{
-    padding:4rem ;
+    margin-top: 35rem;
+    padding:0 6rem ;
   }
   .proj-title{
     font-size: 2em;
@@ -73,11 +77,47 @@
 
 }
 
+@media screen and (max-width:1000px) {
+  .projSlide-container{
+    margin-top: 115rem;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .projSlide-container{
+    margin-top: 110rem;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .projSlide-container{
+    margin-top: 100rem;
+    padding: 0 4rem ;
+  }
+}
+
+
+@media screen and (max-width:700px) {
+  .projSlide-container{
+    margin-top: 95rem;
+    padding: 0 3rem ;
+  }
+  .proj-right{
+    height: 20rem;
+  }
+}
+
+
+@media screen and (max-width:600px) {
+  .projSlide-container{
+    margin-top: 100rem;
+    padding:0 2.5rem ;
+  }
+ 
+}
+
 
 @media screen and (max-width:550px){
-  .projSlide-container{
-    padding:1.5rem ;
-  }
   .proj-title{
   font-size: 1.5em;
 
@@ -85,9 +125,40 @@
   .proj-descrip{
     font-size: 1em;
   }
+
 }
 
+@media screen and (max-width:500px) {
+  .projSlide-container{
+    margin-top: 105rem;
+    padding:0 2rem ;
+  }
+  .proj-right{
+    height: 15rem;
+  }
+}
+
+
+
+@media screen and (max-width:475px){
+  .projSlide-container{
+    margin-top: 100rem ;
+    padding:0 2rem ;
+  }
+
+}
+
+
+
 @media screen and (max-width:400px){
+  .projSlide-container{
+    margin-top: 98rem;
+    padding:0 1rem ;
+  }
+  .proj-right{
+    height: 12rem;
+  }
+
   .proj-cap{
    font-size: .8em;
   }
@@ -97,4 +168,21 @@
   .proj-descrip{
     font-size: .8em;
   }
+}
+
+@media screen and (max-width:375px){
+  .projSlide-container{
+    margin-top: 100rem ;
+    padding:0 2rem ;
+  }
+
+}
+
+
+@media screen and (max-width:350px){
+  .projSlide-container{
+    margin-top: 103rem ;
+    padding:0 2rem ;
+  }
+
 }

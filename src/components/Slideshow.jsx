@@ -12,7 +12,7 @@ const Slideshow = ({slides, isMobileScreen}) => {
   const firstSlide = currentIndex === 0;
   const lastSlide = currentIndex === slides.length - 1
 
-  let color = slides[currentIndex].color;
+  
   
   
 

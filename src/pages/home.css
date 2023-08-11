@@ -7,13 +7,19 @@ background-color: white;
 
 
 .services-section{
-
+  position: absolute;
+  top:-5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   padding: 2rem ;
   border-radius: 5px;
-
+  background-color: white;
+  width: 90%;
+  max-width: 1300px;
 }
 
 
@@ -27,10 +33,10 @@ background-color: white;
 }
 
 .imgBox{
+  transition: all .3s;
   width: 100%;
-  height: auto;
-  margin: auto;
-  
+  height: 12rem;
+  max-width: 25rem;
 }
 
 .serv-descrip{
@@ -50,7 +56,8 @@ background-color: white;
 .serv-caption{
   margin-top: 2rem;
   color:#35b416 ;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1em;
   transition: all .3s;
 }
 
@@ -117,7 +124,7 @@ background-color: white;
 }
 
 .valserv-section{
-  padding-top: 12rem;
+  padding-top: 10rem;
   margin-top: -.2rem;
   padding-bottom:10rem;
 }
@@ -126,6 +133,7 @@ background-color: white;
   font-weight: 600;
   width: 90%;
   margin: auto;
+  color:#35b416;
 }
 
 .valserv-cap{
@@ -135,7 +143,7 @@ background-color: white;
 .valservices{
   margin: auto;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   justify-content: center;
   align-items: center;
   margin-top: 6rem;
@@ -150,20 +158,20 @@ background-color: white;
 }
 
 .valserv-card-cap{
-  font-size: 1em;
+  font-size: .8em;
   color:#35b416;
   font-weight: 600;
 }
 
 .valserv-card-title{
-  font-size: 1.3em;
+  font-size: 1em;
   margin-top: .5rem;
   font-weight: 600;
 }
 
 .valserv-card-text{
   margin-top: 1rem;
-  font-size: 1em;
+  font-size: .8em;
 }
 
 
@@ -178,15 +186,18 @@ background-color: white;
     display: flex;
     flex-direction: column;
     padding: 2rem 4rem;
+    width: 75%;
+    top:-3rem;
   }
   .serv-card{
-    width: 60%;
     margin: auto;
+    width: 90%;
     padding:2rem;
   }
   .imgBox{
-    width: 100%;
+    width: 60%;
     height: auto;
+    margin: 0;
   }
   .serv-caption{
     font-size: 1.2em;
@@ -202,7 +213,7 @@ background-color: white;
     font-weight: 500;
   }
   .valserv-section{
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
   .valservices{
     flex-direction: column;
@@ -218,7 +229,8 @@ background-color: white;
 
 @media screen and (max-width:800px) {
   .services-section{
-    padding: 2rem;
+    padding: 2rem 0;
+    width: 90%;
   }
   .serv-card{
     width: 80%;
@@ -233,15 +245,21 @@ background-color: white;
   }
 }
 
-@media screen and (max-width:500px) {
-  .services-section{
-    padding: 0;
-  }
-  .serv-card{
+
+@media screen and (max-width:600px) {
+  .imgBox{
     width: 80%;
-    margin: auto;
-    padding:1rem;
+    height: auto;
   }
+
+}
+
+@media screen and (max-width:500px) {
+  .imgBox{
+    width: 100%;
+    height: auto;
+  }
+ 
   .serv-title{
     font-size: 1.5em;
   }

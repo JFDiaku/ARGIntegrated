@@ -7,6 +7,7 @@ import About from './pages/About';
 import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Footer from './components/Footer';
+import UpBtn from './components/UpBtn';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <Router>
+      {isMobileScreen && <UpBtn/>}
       <NavBar isMobileScreen={isMobileScreen}/>
       <Routes>
         <Route path='/ARGIntegrated/' element={<Home isMobileScreen={isMobileScreen} />}/>

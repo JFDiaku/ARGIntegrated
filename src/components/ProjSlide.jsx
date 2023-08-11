@@ -16,7 +16,7 @@ const ProjSlide = () => {
         <div className="container projSlide-container" >
 
           
-            <Carousel showThumbs={false} autoPlay="true" emulateTouch="true" interval={5000}>
+            <Carousel showThumbs={false} autoPlay="true" emulateTouch="true" interval={5000} infiniteLoop={true}>
               <div className="proJsupport-slide">
 
                 <div className="proj-left">

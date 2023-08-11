@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom'
 const NavBar = ({isMobileScreen}) => {
   
   
-  {!isMobileScreen ? window.onscroll = function() {scrollFunction()} : ""}
+  {!isMobileScreen && (window.onscroll = function(){scrollFunction()})};
+  
+  
 
   function scrollFunction() {
     if (document.documentElement.scrollTop > 150) {

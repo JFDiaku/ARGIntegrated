@@ -48,10 +48,7 @@ const resCharSlides = [
 const ResCharSlide = () => {
   const [fade, setFade] = useState(false);
 
-  setTimeout(() => {
-    let dots = document.getElementsByClassName("slideDot")
-    console.log(dots)
-  }, 1000);
+
   
   
 

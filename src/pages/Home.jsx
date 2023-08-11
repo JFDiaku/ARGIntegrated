@@ -2,15 +2,12 @@ import TopNav from "../components/topNav"
 import Slideshow from "../components/Slideshow"
 import "./home.css"
 import field from "../images/service1.jpg"
-import drill from "../images/drillserv.jpg"
 import drill2 from "../images/drill2.jpg"
 import planet from "../images/planet.jpg"
-import projserv from "../images/projserv.jpg"
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight"
 import oilPic1 from "../images/oilPic1.jpg"
-import oilPic2 from "../images/oilPic2.jpg"
-import oilPic3 from "../images/oilPic3.jpg"
 import oilPic4 from "../images/oilPic4.jpg"
+import invest from "../images/invest.jpg"
 import ProjSlide from "../components/ProjSlide"
 import ResCharSlide from "../components/ResCharSlide"
 import EngineeringIcon from '@mui/icons-material/Engineering';
@@ -55,7 +52,7 @@ const Home = ({isMobileScreen}) => {
 
       <Slideshow slides={slides} isMobileScreen={isMobileScreen} />
 
-      <section  >
+      <section style={{position:"relative"}}  >
         <div className="container services-container">
           <div className="services-section">
 
@@ -114,7 +111,7 @@ const Home = ({isMobileScreen}) => {
 
               <div className="serv-card">
                 <div className="imgBox">
-                  <img className="serviceImg" src={projserv}></img>
+                  <img className="serviceImg" src={invest}></img>
                 </div>
                 <p className="serv-caption">On Time and With Budget</p>
                 <h3 className="serv-title" >Project Management Services</h3>

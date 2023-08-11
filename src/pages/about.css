@@ -1,0 +1,245 @@
+.about-banner{
+  width: 100%;
+  height: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/oilpic5.jpg) ;
+  filter: grayscale(.3);
+}
+
+
+.about-title{
+  padding: 0 0 0 6rem;
+  font-weight: 700;
+  margin-top:8rem;
+  font-size: 2.5rem;
+  color:white;
+  transition: all .5s;
+}
+
+.about-title2{
+  margin-top: 2rem;
+  font-weight: 800;
+  text-align: center;
+  transition: all .5s;
+  font-size: 1.8em;
+}
+
+.about-container{
+  padding: 0 6rem;
+  transition: all .5s;
+}
+
+.aboutSlide-container{
+  margin-top: 5rem;
+  padding: 0;
+}
+
+.about-right{
+  height: 20rem;
+  width: 100%;
+  max-width: 50rem;
+}
+
+.about-right img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.aboutsupport-slide{
+  width: 100%;
+  text-align: start;
+  display: flex;
+  gap: 3rem;
+  padding:0 .2rem;
+
+}
+
+.about-left{
+  width: 60% ;
+}
+
+.about-cap{
+  color: #35b416;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.about-Slidetitle{
+  color: black;
+  font-size: 1.8em;
+  margin-top: 1rem;
+}
+
+.about-descrip{
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.Aboutservices-section{
+  display: flex;
+  margin-top: 8rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.aboutServ-card{
+  width: 30%;
+  padding: 1rem;
+  border-radius: 5px;
+
+}
+
+.aboutServ-caption, .aboutServ-title, .aboutServ-descrip{
+  margin-top: 1rem;
+}
+
+.aboutServ-title{
+  color: #35b416;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.aboutServ-descrip{
+  font-weight: 500;
+  font-size: .9em;
+}
+
+.inquiry-section{
+  background-color: black;
+  margin-top: 6rem;
+  padding: 3rem 0;
+}
+
+
+.inquiry-box{
+  display: flex;
+  width: 100%;
+  gap: 5rem;
+  align-items: center;
+}
+
+.inquiry-container{
+  max-width: 1800px;
+  justify-content: space-between;
+}
+
+.inquiry-btn{
+  width: 15rem;
+  font-size: .9em;
+}
+
+.inquiry-btnBox{
+  margin: 0;
+  width: 15rem;
+}
+
+.inquiry-arrow1{
+  right: -1rem ;
+}
+
+.inquiry-btnBox:hover + .inquiry-arrow1 {
+  right: -2rem!important;
+}
+
+.inquiry-text{
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #35b416;
+}
+
+
+@media screen and (max-width:1000px) {
+  .aboutsupport-slide{
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .about-container{
+    padding: 0 6rem ;
+  }
+  .about-banner{
+    text-align: center;
+  }
+  .about-left{
+    margin: auto;
+    width: 100%;
+  }
+  .about-title{
+    padding: 0;
+  }
+  .about-title2{
+    text-align: center;
+  }
+ 
+  .about-cap{
+    font-size: 1em;
+  }
+  .about-descrip{
+    font-size: 1.2em;
+  }
+  .Aboutservices-section{
+    flex-direction: column;
+    align-items: start;
+    margin-top: 5rem;
+  }
+    
+  .aboutServ-card{
+    width:80%;
+    
+  }
+  
+  .inquiry-box{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+
+}
+
+@media screen and (max-width:800px){
+  .about-container{
+    padding: 0 2rem;
+  }
+}
+
+
+@media screen and (max-width:550px){
+  .aboutServ-card{
+    width:95%;  
+  }
+  .about-container{
+    padding: 0 1rem;
+  }
+  .about-title{
+  font-size: 2em;
+  }
+
+  .about-title2{
+    font-size: 1.5em;
+  }
+  .about-descrip{
+    font-size: 1em;
+  }
+  .about-right{
+    height: auto;
+  }
+  .Aboutservices-section{
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:400px){
+  .about-cap{
+   font-size: .8em;
+  }
+  .about-title{
+  font-size: 1.5em;
+  }
+  .about-descrip{
+    font-size: .8em;
+  }
+}
