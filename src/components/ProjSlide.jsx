@@ -8,6 +8,7 @@ import service3 from "../images/service3.jpg"
 import service4 from "../images/service4.jpg"
 import ropeAcess from "../images/ropeAcess.jpg"
 import maint from "../images/maint.jpg"
+import { Link } from 'react-router-dom';
 
 const ProjSlide = () => {
   return (
@@ -16,7 +17,7 @@ const ProjSlide = () => {
         <div className="container projSlide-container" >
 
           
-            <Carousel showThumbs={false} autoPlay="true" emulateTouch="true" interval={5000} infiniteLoop={true}>
+            <Carousel showThumbs={false} autoPlay={true} emulateTouch={true} interval={5000} infiniteLoop={true}>
               <div className="proJsupport-slide">
 
                 <div className="proj-left">
@@ -29,8 +30,8 @@ const ProjSlide = () => {
                     ability and experience necessary for project success. 
                   </p>
 
-                  <div className="buttonBox">
-                    <button className="exploreBtn">Learn More</button>
+                  <div className="buttonBox proj-Button">
+                    <Link to="/ARGIntegrated/services/Project-Support-services" className="exploreBtn slideBTN">Learn More</Link>
                     <div className="btn-arrow1">
                       <div className="arrow">
                         <ArrowCircleRightIcon sx={{color:"white", fontSize:"1.3em"}}/>
@@ -58,8 +59,8 @@ const ProjSlide = () => {
                    Approved by the leading Authorities in the offshore industry. 
                 </p>
 
-                <div className="buttonBox">
-                  <button className="exploreBtn">Learn More</button>
+                <div className="buttonBox proj-Button">
+                  <Link to="/ARGIntegrated/services/Project-Support-services" className="exploreBtn slideBTN">Learn More</Link>
                   <div className="btn-arrow1">
                     <div className="arrow">
                       <ArrowCircleRightIcon sx={{color:"white", fontSize:"1.3em"}}/>
@@ -87,8 +88,8 @@ const ProjSlide = () => {
                   Services for the Oil and Gas industry. We can perform gap analysis against shipyard scope as well.
                 </p>
 
-                <div className="buttonBox">
-                  <button className="exploreBtn">Learn More</button>
+                <div className="buttonBox proj-Button">
+                <Link to="/ARGIntegrated/services/Project-Support-services" className="exploreBtn slideBTN">Learn More</Link>
                   <div className="btn-arrow1">
                     <div className="arrow">
                       <ArrowCircleRightIcon sx={{color:"white", fontSize:"1.3em"}}/>
@@ -116,8 +117,8 @@ const ProjSlide = () => {
                   We have IRATA qualified rope access professionals to meet your toughest challenges.
                 </p>
 
-                <div className="buttonBox">
-                  <button className="exploreBtn">Learn More</button>
+                <div className="buttonBox proj-Button">
+                <Link to="/ARGIntegrated/services/Project-Support-services" className="exploreBtn slideBTN">Learn More</Link>
                   <div className="btn-arrow1">
                     <div className="arrow">
                       <ArrowCircleRightIcon sx={{color:"white", fontSize:"1.3em"}}/>

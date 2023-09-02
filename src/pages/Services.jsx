@@ -9,9 +9,13 @@ import "./services.css"
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight"
 import { easeInOut, motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
-
+import { Link } from "react-router-dom";
+import { useMediaQuery } from "@mui/material";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Services = ({isMobileScreen}) => {
+
+  const isVisibleText = useMediaQuery('(max-width:800px)');
   return (
     <>
       <TopNav isMobileScreen={isMobileScreen}/>
@@ -30,7 +34,7 @@ const Services = ({isMobileScreen}) => {
       <div className="Services-Box">
 
             <div className="Service-card">
-              <a href="#" className="ServiceLink">
+              <Link to='/ARGIntegrated/services/Drilling-And-Field-services' className="ServiceLink">
                 <div className="Service-icon">
                 <AnimatePresence>
                     <motion.img
@@ -42,16 +46,28 @@ const Services = ({isMobileScreen}) => {
                 <h4 className="Service-card-title">
                   Drilling and Filed Services
                 </h4>
-              </a>
+              </Link>
               
               <p className="Service-card-text" >
               industry standard services and equipment to support all stages of the oil field production lifecycle. 
               Ensure your project meets schedule and budget requirements. We’ll support you from your technicians to your drillers
               </p>
+
+              {(isVisibleText ) && 
+              <Link to='/ARGIntegrated/services/Drilling-And-Field-services' className="buttonBox">
+                <button className="exploreBtn">Explore</button>
+                <div className="btn-arrow1">
+                  <div className="arrow">
+                    <ArrowCircleRightIcon sx={{color:"white", fontSize:"1.3em"}}/>
+                  </div>                   
+                </div>
+                
+              </Link>
+              }
           </div>
 
             <div className="Service-card">
-              <a href="#" className="ServiceLink">
+              <Link to='/ARGIntegrated/services/Project-Support-services' className="ServiceLink">
                 <div className="Service-icon">
                 <AnimatePresence>
                     <motion.img
@@ -65,16 +81,28 @@ const Services = ({isMobileScreen}) => {
                 <h4 className="Service-card-title">
                   project Support Services
                 </h4>
-              </a>
+              </Link>
               
               <p className="Service-card-text" >
                 ARG Energy provides a comprehensive range of inspections required to operate within industry standard and legal standards.
                 Our scalable teams will be able to support you in on the spot and project related nondestructive testing (NDT) work.
               </p>
+
+              {(isVisibleText )  && 
+              <Link to='/ARGIntegrated/services/Project-Support-services' className="buttonBox">
+                <button className="exploreBtn">Explore</button>
+                <div className="btn-arrow1">
+                  <div className="arrow">
+                    <ArrowCircleRightIcon sx={{color:"white", fontSize:"1.3em"}}/>
+                  </div>                   
+                </div>
+                
+              </Link>
+              }
             </div>
 
             <div className="Service-card">
-              <a href="#" className="ServiceLink">
+              <Link to='/ARGIntegrated/services/Resevoir-Characterization-and-Manpower-services' className="ServiceLink">
                 <div className="Service-icon">
                   <AnimatePresence>
                     <motion.img
@@ -89,17 +117,29 @@ const Services = ({isMobileScreen}) => {
                 <h4 className="Service-card-title">
                   Resevoir Characterization and Manpower Services
                 </h4>
-              </a>
+              </Link>
              
               <p className="Service-card-text" >
               In order to get the most out of your reservoir you must have a thorough knowledge of its operation and characteristics throughout its lifetime. 
               Our Oilfield Services, petrochemical subject matter 
               expertise and tools will help you gain insight into your reservoir fluids and rocks with precise measurements.
               </p>
+
+              {(isVisibleText )  && 
+              <Link to='/ARGIntegrated/services/Resevoir-Characterization-and-Manpower-services' className="buttonBox">
+                <button className="exploreBtn">Explore</button>
+                <div className="btn-arrow1">
+                  <div className="arrow">
+                    <ArrowCircleRightIcon sx={{color:"white", fontSize:"1.3em"}}/>
+                  </div>                   
+                </div>
+                
+              </Link>
+              }
             </div>
 
             <div className="Service-card">
-              <a href="#" className="ServiceLink">
+              <Link to='/ARGIntegrated/services/Testing-and-Integrity-Management-services'  className="ServiceLink">
                 <div className="Service-icon">
                 <AnimatePresence>
                     <motion.img
@@ -113,17 +153,29 @@ const Services = ({isMobileScreen}) => {
                 <h4 className="Service-card-title">
                   Testing and Integrity Management
                 </h4>
-              </a>
+              </Link>
               
                 <p className="Service-card-text" >
                 Whether you need offshore or onshore production and exploration well testing anywhere in the world, 
                 ARG Integrated Energy is the Asset Integrity Management company for you. We provide integral aspects of
                 reservoir management for both operational fields and new project development.
                 </p>
+
+                {(isVisibleText )  && 
+                <Link to='/ARGIntegrated/services/Testing-and-Integrity-Management-services' className="buttonBox">
+                  <button className="exploreBtn">Explore</button>
+                  <div className="btn-arrow1">
+                    <div className="arrow">
+                      <ArrowCircleRightIcon sx={{color:"white", fontSize:"1.3em"}}/>
+                    </div>                   
+                  </div>
+                  
+                </Link>
+                }
             </div>
 
             <div className="Service-card">
-              <a href="#" className="ServiceLink">
+              <Link to='/ARGIntegrated/services/Inspection-and-Risk-Management-services' className="ServiceLink">
                 <div className="Service-icon">
                 <AnimatePresence>
                     <motion.img
@@ -137,17 +189,29 @@ const Services = ({isMobileScreen}) => {
                 <h4 className="Service-card-title">
                   Inspection and Risk Management
                 </h4>
-              </a>
+              </Link>
               
                 <p className="Service-card-text" >
                 In order to properly inspect any situation, you first must have a proper understanding of all the variables at play
                  as well as the contextual operating environment. We implement a Risk Based Inspection approach that considers the potentialities of
                   occurrences as well as their associated impact damage potential.
                 </p>
+
+                {(isVisibleText )  && 
+                <Link to='/ARGIntegrated/services/Inspection-and-Risk-Management-services' className="buttonBox">
+                  <button className="exploreBtn">Explore</button>
+                  <div className="btn-arrow1">
+                    <div className="arrow">
+                      <ArrowCircleRightIcon sx={{color:"white", fontSize:"1.3em"}}/>
+                    </div>                   
+                  </div>
+                  
+                </Link>
+                }
             </div>
 
             <div className="Service-card">
-              <a href="#" className="ServiceLink">
+              <Link to='/ARGIntegrated/services/Piping-certification-and-maintenance-repair-services' className="ServiceLink">
                 <div className="Service-icon">
                 <AnimatePresence>
                     <motion.img
@@ -161,12 +225,24 @@ const Services = ({isMobileScreen}) => {
                 <h4 className="Service-card-title">
                   Piping Certification and Maintenace repair
                 </h4>
-              </a>
+              </Link>
             
               <p className="Service-card-text" >
                 ARG Integrated Energy is an international player in the wellhead maintenance services industry. 
                 We understand the importance of providing our clients with the best inspection, repair, functionality testing and optimization and emergency intervention services. Complying will global standards such as API 570 piping inspection will help you operate efficiently as well as avoid potential risks, emergencies and loss.
               </p>
+
+              {(isVisibleText )  && 
+              <Link to='/ARGIntegrated/services/Piping-certification-and-maintenance-repair-services' className="buttonBox">
+                <button className="exploreBtn">Explore</button>
+                <div className="btn-arrow1">
+                  <div className="arrow">
+                    <ArrowCircleRightIcon sx={{color:"white", fontSize:"1.3em"}}/>
+                  </div>                   
+                </div>
+                
+              </Link>
+              }
             </div>
 
             
@@ -178,7 +254,7 @@ const Services = ({isMobileScreen}) => {
               <div className="inquiry-box">
                 <p className="inquiry-text">Fill out the quick inqiry form for more information and service options</p>
 
-                <div className="buttonBox inquiry-btnBox">
+                <Link className="buttonBox inquiry-btnBox">
                   <button className="exploreBtn inquiry-btn">COMPLETE INQUIRY NOW</button>
                   <div className="btn-arrow1 inquiry-arrow1">
                     <div className="arrow">
@@ -186,11 +262,13 @@ const Services = ({isMobileScreen}) => {
                     </div>                   
                   </div>
                   
-                </div>
+                </Link>
 
               </div>
             </div>
           </section>
+
+        <ScrollToTop/>
     </>
   )
 }

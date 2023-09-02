@@ -6,11 +6,13 @@ import drill2 from "../images/drill2.jpg"
 import partner from "../images/partner.jpg"
 import projserv from "../images/projserv.jpg"
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight"
+import ScrollToTop from "../components/ScrollToTop";
 
 const About = ({isMobileScreen}) => {
   return (
     <>
       <TopNav isMobileScreen={isMobileScreen}/>
+
       <section>
         <div className="about-banner">
           <div className="container ">
@@ -109,6 +111,8 @@ const About = ({isMobileScreen}) => {
           </div>
         </div>
       </section>
+
+      <ScrollToTop/>
     </>
   )
 }

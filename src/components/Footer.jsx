@@ -15,7 +15,7 @@ const Footer = ({isMobileScreen}) => {
           <p className="footer-text">
             We provide energy consultation and management 
             services to clients who need first class support. Our experience 
-            and excellence have helped us build a global network of strategically leveraged partnerships.
+            and excellence have helped us build Link global network of strategically leveraged partnerships.
           </p>
         </div>
 
@@ -23,22 +23,22 @@ const Footer = ({isMobileScreen}) => {
           <h2 style={{fontWeight:600}}>Services Suite</h2>
           <ul className="footer-serv">
             <li className="mobNav-item-footer">
-              <a href='#'>Drilling and field services</a>
+              <Link to='/ARGIntegrated/services/Drilling-And-Field-services'>Drilling and field services</Link>
             </li>
             <li className="mobNav-item-footer">
-              <a href='#'>Project Support Services</a>
+              <Link to='/ARGIntegrated/services/Project-Support-services'>Project Support Services</Link>
             </li>
             <li className="mobNav-item-footer">
-              <a href='#'>Reservoir Characterization & Manpower Services</a>
+              <Link to='/ARGIntegrated/services/Resevoir-Characterization-and-Manpower-services'>Reservoir Characterization & Manpower Services</Link>
             </li>
             <li className="mobNav-item-footer">
-              <a href='#'>Testing & Integrity Management</a>
+              <Link to='/ARGIntegrated/services/Testing-and-Integrity-Management-services'>Testing & Integrity Management</Link>
             </li>
             <li className="mobNav-item-footer">
-              <a href='#'>Inspection & Risk Management</a>
+              <Link to='/ARGIntegrated/services/Inspection-and-Risk-Management-services'>Inspection & Risk Management</Link>
             </li>
             <li className="mobNav-item-footer">
-              <a href='#'>Piping Certification, Maintenance & Repair</a>
+              <Link to='/ARGIntegrated/services/Piping-certification-and-maintenance-repair-services'>Piping Certification, Maintenance & Repair</Link>
             </li>
           </ul>
         </div>

@@ -14,6 +14,8 @@ import EngineeringIcon from '@mui/icons-material/Engineering';
 import SpeedIcon from '@mui/icons-material/Speed';
 import OilBarrelIcon from '@mui/icons-material/OilBarrel';
 import ContactSupportIcon from '@mui/icons-material/ContactSupport';
+import { Link } from "react-router-dom"
+import ScrollToTop from "../components/ScrollToTop";
 
 const Home = ({isMobileScreen}) => {
   
@@ -70,7 +72,7 @@ const Home = ({isMobileScreen}) => {
                 </div>
 
                
-                  <div className="buttonBox">
+                  <Link to='/ARGIntegrated/services/Drilling-And-Field-services'  className="buttonBox">
                     <button className="exploreBtn">Explore</button>
                     <div className="btn-arrow1">
                       <div className="arrow">
@@ -78,7 +80,7 @@ const Home = ({isMobileScreen}) => {
                       </div>                   
                     </div>
                     
-                  </div>
+                  </Link>
                
                 
               </div>
@@ -95,8 +97,8 @@ const Home = ({isMobileScreen}) => {
                 contract drilling services seamlessly to our high demanding clients.
                 </div>
 
-               <a className="btnLink">
-                  <div className="buttonBox">
+               
+                  <Link to='/ARGIntegrated/services/Drilling-And-Field-services' className="buttonBox">
                     <button className="exploreBtn">Explore</button>
                     <div className="btn-arrow1">
                       <div className="arrow">
@@ -104,8 +106,8 @@ const Home = ({isMobileScreen}) => {
                       </div>                   
                     </div>
                     
-                  </div>
-                </a>
+                  </Link>
+              
                 
               </div>
 
@@ -121,8 +123,8 @@ const Home = ({isMobileScreen}) => {
                   project succeeds on schedule and within budget.
                 </div>
                 
-                <a className="btnLink">
-                  <div className="buttonBox">
+                
+                  <Link to='/ARGIntegrated/services/Project-Support-services' className="buttonBox">
                     <button className="exploreBtn">Explore</button>
                     <div className="btn-arrow1">
                       <div className="arrow">
@@ -130,8 +132,8 @@ const Home = ({isMobileScreen}) => {
                       </div>                   
                     </div>
                     
-                  </div>
-                </a>
+                  </Link>
+                
                
                 
               </div>
@@ -144,7 +146,7 @@ const Home = ({isMobileScreen}) => {
 
       <ProjSlide/>
 
-      <ResCharSlide/>
+      <ResCharSlide isMobileScreen={isMobileScreen}/>
 
       <section style={{backgroundColor:"black", color:"white"}} className="valserv-section">
         <div className="container valserv-container">
@@ -219,6 +221,7 @@ const Home = ({isMobileScreen}) => {
         </div>
       </section>
 
+    <ScrollToTop/>
 
       
     </>

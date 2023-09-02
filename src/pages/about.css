@@ -4,7 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/oilpic5.jpg) ;
+  background-image: url(../images/planet.jpg) ;
   filter: grayscale(.3);
 }
 
@@ -124,6 +124,7 @@
 .inquiry-container{
   max-width: 1800px;
   justify-content: space-between;
+  padding: 0 1rem;
 }
 
 .inquiry-btn{
@@ -216,6 +217,7 @@
   }
   .about-title{
   font-size: 2em;
+  word-wrap: ;
   }
 
   .about-title2{
@@ -235,9 +237,6 @@
 @media screen and (max-width:400px){
   .about-cap{
    font-size: .8em;
-  }
-  .about-title{
-  font-size: 1.5em;
   }
   .about-descrip{
     font-size: .8em;

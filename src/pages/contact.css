@@ -1,5 +1,6 @@
 .contact-banner{
-  background-image: url(../images/oilpic2.jpg);
+  background-image: url(../images/oilpic1.jpg);
+  height: 15rem;
 }
 
 .contacts-box{
@@ -11,16 +12,22 @@
   margin-top: 5rem;
 }
 
+
+.contact-banner-title{
+  margin-top:6rem;
+}
+
 .contact-us-title{
   text-align: center;
   margin-top: 2rem;
   color: #35b416;
   font-weight: 600;
+  padding: 1rem;
 }
 
 .contacts-card p{
   font-weight: 500;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .contacts-card-title{
@@ -125,5 +132,11 @@
 
   .mapsection{
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact-us-title{
+    font-size: 1.5em;
   }
 }

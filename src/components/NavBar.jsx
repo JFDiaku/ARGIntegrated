@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const NavBar = ({isMobileScreen}) => {
   
   
-  {!isMobileScreen && (window.onscroll = function(){scrollFunction()})};
+  {!isMobileScreen ? (window.onscroll = function(){scrollFunction()}) : ""};
   
   
 
@@ -46,22 +46,22 @@ const NavBar = ({isMobileScreen}) => {
 
                     <ul className='ServiceLinks'>
                       <li>
-                        <Link to='/ARGIntegrated/'>Drilling and field services</Link>
+                        <Link to='/ARGIntegrated/services/Drilling-And-Field-services'>Drilling and field services</Link>
                       </li>
                       <li>
-                        <Link to='/ARGIntegrated/'>Project Support Services</Link>
+                        <Link to='/ARGIntegrated/services/Project-Support-services'>Project Support Services</Link>
                       </li>
                       <li>
-                        <Link to='/ARGIntegrated/'>Reservoir Characterization & Manpower Services</Link>
+                        <Link to='/ARGIntegrated/services/Resevoir-Characterization-and-Manpower-services'>Reservoir Characterization & Manpower Services</Link>
                       </li>
                       <li>
-                        <Link to='/ARGIntegrated/'>Testing & Integrity Management</Link>
+                        <Link to='/ARGIntegrated/services/Testing-and-Integrity-Management-services'>Testing & Integrity Management</Link>
                       </li>
                       <li>
-                        <Link to='/ARGIntegrated/'>Inspection & Risk Management</Link>
+                        <Link to='/ARGIntegrated/services/Inspection-and-Risk-Management-services'>Inspection & Risk Management</Link>
                       </li>
                       <li>
-                        <Link to='/ARGIntegrated/'>Piping Certification, Maintenance & Repair</Link>
+                        <Link to='/ARGIntegrated/services/Piping-certification-and-maintenance-repair-services'>Piping Certification, Maintenance & Repair</Link>
                       </li>
                     </ul>
                   </div>

@@ -27,7 +27,8 @@
 
 @media screen and (max-width:450px) {
   .cap-title{
-    font-size: 1.8em!important;
+    font-size: 1.6em!important;
+    padding: 0 1rem;
   }
   .cap-text{
     font-size: 1em!important;

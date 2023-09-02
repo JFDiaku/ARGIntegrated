@@ -8,8 +8,9 @@ import geophys from "../images/geophys.jpg"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useState } from "react";
 import { useSwipeable } from "react-swipeable";
-
-
+import { Link } from "react-router-dom";
+import swipe from  "../images/swipe.png";
+import { color } from "framer-motion";
 const resCharSlides = [
   {
     caption:`Reservoir Characterization`,
@@ -45,31 +46,46 @@ const resCharSlides = [
 ]
 
 
-const ResCharSlide = () => {
+const ResCharSlide = ({isMobileScreen}) => {
   const [fade, setFade] = useState(false);
-
-
-  
   
 
   const [currentIndex, changeIndex] = useState(0);
   const firstSlide = currentIndex === 0;
+  const slide2 = currentIndex === 1;
+  const slide3 = currentIndex === 2;
   const lastSlide = currentIndex === resCharSlides.length - 1
 
+  let dotARR;
+
+  window.onload = function (){
+    dotARR = document.getElementsByClassName("slideDot");
+  }
+
+
+  
 
   const handlers = useSwipeable({
     onSwipedLeft: () => {
       const newIndex = lastSlide ? 0 : currentIndex + 1;
       changeIndex(newIndex);
+      document.getElementsByClassName("slideDot")[currentIndex].style.color = "white" ;
+      document.getElementsByClassName("slideDot")[newIndex].style.color = "green" ;
       fadeDiv();
     },
     onSwipedRight: () => {
       const newIndex = firstSlide ? resCharSlides.length - 1 : currentIndex - 1;
       changeIndex(newIndex);
+      document.getElementsByClassName("slideDot")[currentIndex].style.color = "white" ;
+      document.getElementsByClassName("slideDot")[newIndex].style.color = "green" ;
       fadeDiv();
     },
     
   });
+
+  const changeDot = ()=>{
+    document.getElementsByClassName("slideDot")[currentIndex].style.color = "white" ;
+  }
 
   const next = ()=>{
     const newIndex = lastSlide ? 0 : currentIndex + 1;
@@ -90,9 +106,6 @@ const ResCharSlide = () => {
   let sectionClass = "resChar-section"
   sectionClass += fade ? "-fade" : "";
 
-  
-  
-  
 
   return (
 
@@ -101,13 +114,14 @@ const ResCharSlide = () => {
       <section {...handlers} className={sectionClass}>
 
         <ul className="dots">
-          <li className="slideDot" onClick={()=> {fadeDiv(); changeIndex(0);} }>●</li>
+          <li className="slideDot"  onClick={()=> {fadeDiv(); changeIndex(0);} }>●</li>
           <li className="slideDot" onClick={()=> {fadeDiv(); changeIndex(1);} }>●</li>
           <li className="slideDot" onClick={()=> {fadeDiv(); changeIndex(2);} }>●</li>
           <li className="slideDot" onClick={()=> {fadeDiv(); changeIndex(3);} }>●</li>
         </ul>
 
           <div className="container resChar-container">
+            {isMobileScreen && <img className="swipeIcon" src={swipe}></img>}
             <div className="resCharSlide">
               <div className="resChar-left">
                 <p className="resChar-cap">{resCharSlides[currentIndex].caption}</p>
@@ -116,14 +130,15 @@ const ResCharSlide = () => {
                   {resCharSlides[currentIndex].text}
                 </p>
 
-                <div className="buttonBox btnBox">
+                <Link to='/ARGIntegrated/services/Resevoir-Characterization-and-Manpower-services' className="buttonBox btnBox">
                   <button className="exploreBtn resChar-btn">SEE RESEVOIR CHARACTERIZATION</button>
                   <div className="btn-arrow1">
                     <div className="arrow">
                       <ArrowCircleRightIcon sx={{color:"white", fontSize:"1.3em"}}/>
                     </div>                   
                   </div>   
-                </div>
+                </Link>
+
               </div>
               
               
@@ -132,7 +147,7 @@ const ResCharSlide = () => {
           
 
             <div className="resChar-right">
-                <img src={resCharSlides[currentIndex].src}></img>
+                <img  src={resCharSlides[currentIndex].src}></img>
               </div>
         
         

@@ -4,7 +4,7 @@
 
 .projSlide-container{
   margin-top: 30rem;
-  padding: 7rem;
+  padding: 7rem 3rem;
 }
 
 .proj-right img{
@@ -50,6 +50,9 @@
   font-weight: 500;
 }
 
+.proj-Button{
+  width: 9rem;
+}
 
 @media screen and (max-width:1100px) {
   .proJsupport-slide{

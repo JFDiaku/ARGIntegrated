@@ -2,7 +2,7 @@ import TopNav from "../components/topNav";
 import "./contact.css"
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-
+import ScrollToTop from "../components/ScrollToTop";
 const Contact = ({isMobileScreen}) => {
   return (
     <>
@@ -10,7 +10,7 @@ const Contact = ({isMobileScreen}) => {
       <section>
         <div className="about-banner contact-banner">
           <div className="container ">
-            <h2 className="about-title">Contact us</h2>
+            <h2 className="about-title contact-banner-title">Contact us</h2>
           </div>
         </div>
       </section>
@@ -67,6 +67,8 @@ const Contact = ({isMobileScreen}) => {
         </div>
 
       </div>
+
+      <ScrollToTop/>
     </>
   )
 }

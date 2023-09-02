@@ -1,0 +1,158 @@
+.testingSVC-sec{
+  padding: 1rem 7rem;
+}
+
+.comm-sec, .comm-sec2{
+  margin-top: 4rem;
+}
+
+.comm-banner2{
+  width: 40%;
+ }
+
+
+
+
+@media screen and (min-width: 3000px) {
+  .comm-banner2{
+    width: 43%;
+   }
+}
+
+@media screen and (max-width: 1250px) {
+  .comm-banner2{
+    width: 45%;
+   }
+}
+
+
+@media screen and (max-width: 1100px) {
+  .comm-banner2{
+    width: 48%;
+   }
+   .comm-banner{
+    width: 43%;
+   }
+}
+
+
+@media screen and (max-width: 1050px) {
+  .comm-banner2{
+    width: 55%;
+   }
+
+}
+
+@media screen and (max-width: 900px) {
+  .testingSVC-sec{
+    padding: 1rem 3rem;
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+  .comm-banner2{
+    width: 60%;
+   }
+   .comm-banner{
+    width: 46%;
+   }
+
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+  .comm-banner2{
+    width: 70%;
+   }
+   .comm-banner{
+    width: 50%;
+   }
+}
+
+@media screen and (max-width: 650px) {
+  .comm-banner2{
+    width: 75%;
+   }
+   .comm-banner{
+    width: 60%;
+   }
+}
+
+@media screen and (max-width: 600px) {
+  .comm-banner2{
+    width: 85%;
+   }
+   .comm-banner{
+    width: 65%;
+   }
+}
+
+@media screen and (max-width: 550px) {
+  .comm-banner2{
+    width: 90%;
+   }
+   .comm-banner{
+    width: 70%;
+   }
+}
+
+@media screen and (max-width: 500px) {
+  .testingSVC-sec{
+    padding: 1rem 2rem;
+  }
+  .comm-banner2{
+    width: 100%;
+   }
+   .comm-banner{
+    width: 75%;
+   }
+  
+}
+
+@media screen and (max-width: 445px) {
+  .comm-banner2{
+    width: 95%;
+    height: 7rem;
+   }
+   .comm-sec2{
+    margin-top: 5rem;
+   }
+   .comm-banner{
+    width: 85%;
+   }
+  
+}
+
+
+@media screen and (max-width: 400px) {
+  .testingSVC-sec{
+    padding: 1rem;
+  }
+  .rescharSVC-topsec{
+    padding: 1rem;
+  }
+  
+}
+
+
+
+
+
+@media screen and (max-width: 360px) {
+  .comm-banner2{
+    width: 100%;
+    height: 5.5rem;
+   }
+
+   .drillSVC-container h1{
+    font-size: 1.2em;
+   }
+
+   .comm-banner{
+    width: 95%;
+   }
+  
+}

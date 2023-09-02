@@ -18,7 +18,7 @@ const AboutSlide = () => {
       <div className="container aboutSlide-container" >
 
                 
-        <Carousel showThumbs={false} emulateTouch="true" interval={5000} infiniteLoop={true}>
+        <Carousel showThumbs={false} emulateTouch={true} interval={5000} infiniteLoop={true}>
           <div className="aboutsupport-slide">
 
             <div className="about-left">

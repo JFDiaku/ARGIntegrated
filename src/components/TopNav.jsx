@@ -37,7 +37,7 @@ const TopNav = ({isMobileScreen}) => {
 
 
             {isMobileScreen && 
-              <button onClick={() => toggleNav(!navToggled) (dropdown && toggleDropdown(false))} className="mobNav-btn">
+              <button onClick={() => {toggleNav(!navToggled); dropdown && toggleDropdown(false);}} className="mobNav-btn">
                 <Menu sx={{fontSize:"2.5em", color:"#35b416"}}/>
               </button>
             }
@@ -95,22 +95,22 @@ const TopNav = ({isMobileScreen}) => {
 
                   <ul className='ServiceLinks'>
                     <li>
-                      <a href='#'>Drilling and field services</a>
+                      <Link to='/ARGIntegrated/services/Drilling-And-Field-services'>Drilling and field services</Link>
                     </li>
                     <li>
-                      <a href='#'>Project Support Services</a>
+                      <Link to='/ARGIntegrated/services/Project-Support-services'>Project Support Services</Link>
                     </li>
                     <li>
-                      <a href='#'>Reservoir Characterization & Manpower Services</a>
+                      <Link to='/ARGIntegrated/services/Resevoir-Characterization-and-Manpower-services'>Reservoir Characterization & Manpower Services</Link>
                     </li>
                     <li>
-                      <a href='#'>Testing & Integrity Management</a>
+                      <Link to='/ARGIntegrated/services/Testing-and-Integrity-Management-services'>Testing & Integrity Management</Link>
                     </li>
                     <li>
-                      <a href='#'>Inspection & Risk Management</a>
+                      <Link to='/ARGIntegrated/services/Inspection-and-Risk-Management-services'>Inspection & Risk Management</Link>
                     </li>
                     <li>
-                      <a href='#'>Piping Certification, Maintenance & Repair</a>
+                      <Link to='/ARGIntegrated/services/Piping-certification-and-maintenance-repair-services'>Piping Certification, Maintenance & Repair</Link>
                     </li>
                   </ul>
                 </div>
@@ -125,21 +125,21 @@ const TopNav = ({isMobileScreen}) => {
 
             <ul className="socialLinks">
               <li  className='navItem'>
-                <a href='#'>
+                <Link to='/ARGIntegrated/services/'>
                   <FacebookIcon/>
-                </a>
+                </Link>
               </li>
 
               <li  className='navItem'>
-                <a href='#'>
+                <Link to='/ARGIntegrated/services/'>
                   <LinkedInIcon/>
-                </a>
+                </Link>
               </li>
 
               <li  className='navItem'>
-                <a href='#'>
+                <Link to='/ARGIntegrated/services/'>
                   <TwitterIcon/>
-                </a>
+                </Link>
               </li>
             </ul>
       </div>
@@ -184,22 +184,22 @@ const TopNav = ({isMobileScreen}) => {
       className="mobDropdown-menu">
         <ul className='mob-ServiceLinks'>
           <li className="mobNav-item">
-            <a href='#'>Drilling and field services</a>
+            <Link to='/ARGIntegrated/services/Drilling-And-Field-services'>Drilling and field services</Link>
           </li>
           <li className="mobNav-item">
-            <a href='#'>Project Support Services</a>
+            <Link to='/ARGIntegrated/services/Project-Support-services'>Project Support Services</Link>
           </li>
           <li className="mobNav-item">
-            <a href='#'>Reservoir Characterization & Manpower Services</a>
+            <Link to='/ARGIntegrated/services/Resevoir-Characterization-and-Manpower-services'>Reservoir Characterization & Manpower Services</Link>
           </li>
           <li className="mobNav-item">
-            <a href='#'>Testing & Integrity Management</a>
+            <Link to='/ARGIntegrated/services/Testing-and-Integrity-Management-services'>Testing & Integrity Management</Link>
           </li>
           <li className="mobNav-item">
-            <a href='#'>Inspection & Risk Management</a>
+            <Link to='/ARGIntegrated/services/Inspection-and-Risk-Management-services'>Inspection & Risk Management</Link>
           </li>
           <li className="mobNav-item">
-            <a href='#'>Piping Certification, Maintenance & Repair</a>
+            <Link to='/ARGIntegrated/services/Piping-certification-and-maintenance-repair-services'>Piping Certification, Maintenance & Repair</Link>
           </li>
         </ul>
       </motion.div>}
