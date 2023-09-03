@@ -2,6 +2,8 @@
   padding: 1rem 7rem;
 }
 
+
+
 .comm-sec, .comm-sec2{
   margin-top: 4rem;
 }
@@ -32,6 +34,9 @@
    }
    .comm-banner{
     width: 43%;
+   }
+   .testBanner1{
+    width: 45%;
    }
 }
 
@@ -69,6 +74,9 @@
    }
    .comm-banner{
     width: 50%;
+   }
+   .testBanner1{
+    width: 60%;
    }
 }
 
@@ -109,13 +117,17 @@
    .comm-banner{
     width: 75%;
    }
-  
+   .testBanner1{
+    width: 75%;
+   }
 }
 
 @media screen and (max-width: 445px) {
   .comm-banner2{
-    width: 95%;
-    height: 7rem;
+    width: 97%;
+   }
+   .equipserv-title{
+    font-size: 1.1em;
    }
    .comm-sec2{
     margin-top: 5rem;
@@ -134,6 +146,10 @@
   .rescharSVC-topsec{
     padding: 1rem;
   }
+  .testBanner1{
+    width: 85%;
+   }
+   
   
 }
 
@@ -143,9 +159,15 @@
 
 @media screen and (max-width: 360px) {
   .comm-banner2{
-    width: 100%;
+    width: 90%;
     height: 5.5rem;
    }
+   .rescharSVC-topsec{
+    margin-top: 5rem;
+  }
+  .equipserv-title{
+    max-width: 300px;
+  }
 
    .drillSVC-container h1{
     font-size: 1.2em;

@@ -12,7 +12,7 @@
 }
 
 .drillSVC-banner1{
-  background-image: url(../images/oilPic1.jpg);
+  background-image: url(../images/service6.jpg);
   filter: grayscale(1);
 
 }
@@ -45,8 +45,9 @@
 }
 
 .drillSVC-title{
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 500;
+  text-align: start;
 }
 
 .drillSVC-section{
@@ -130,6 +131,9 @@
   .drillSVC-banner{
     width: 70%;
   }
+  .drillSVC-container{
+    padding: 1.5rem 0 0 2rem  ;
+  }
 }
 
 
@@ -145,6 +149,12 @@
   }
   .top-sec{
     padding-top: 2rem;
+  }
+  .drillSVC-container{
+    padding: 1.5rem 0 0 1rem  ;
+  }
+  .drillSVC-title{
+    max-width: 300px;
   }
 }
 
@@ -162,4 +172,5 @@
   .top-sec{
     padding-top: 2rem;
   }
+  
 }

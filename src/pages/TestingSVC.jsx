@@ -19,7 +19,7 @@ const TestingSVC = ({isMobileScreen}) => {
       </section>
 
       <section className="drillSVC-section banner1">
-        <div className="drillSVC-banner rescharSVC-banner2">
+        <div className="drillSVC-banner testBanner1">
         </div>
         <div className="container drillSVC-container">
           <img className="drillSVC-icon" src={testing}></img>
@@ -161,7 +161,7 @@ const TestingSVC = ({isMobileScreen}) => {
         </div>
         <div className="container drillSVC-container">
           <img className="drillSVC-icon" src={testing}></img>
-          <h1 className="drillSVC-title">Equipment Inspection Services</h1>       
+          <h1 className="drillSVC-title  equipserv-title">Equipment Inspection Services</h1>       
         </div>
       </section>
 

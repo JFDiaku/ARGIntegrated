@@ -32,7 +32,7 @@ const DrillSVC = ({isMobileScreen}) => {
         <div className="container">
           <div className="drillSVC-textBox">
             <div className="drilling-services-text">
-              <p>
+              <div>
                 ARG Integrated Energy is one of the best Oil and Gas Companies in Nigeria, providing industry 
                 standard services and equipment to support all stages of the oil field production lifecycle. Ensure your project meets schedule and budget requirements. We’ll support you from your technicians to your drillers.
                 <br />
@@ -42,7 +42,7 @@ const DrillSVC = ({isMobileScreen}) => {
                     <u>Services Include:</u>
                   </p>
                 </div>
-              </p>
+              </div>
             </div>
             <ul className="drilling-services-list">
               <li className="drilling-services-item">

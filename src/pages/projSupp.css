@@ -18,7 +18,7 @@
 
 @media screen and (max-width:1200px){
   .projSupp-banner{
-    width: 60%;
+    width: 65%;
   }
 }
 
@@ -30,26 +30,30 @@
 
 @media screen and (max-width:850px){
   .projSupp-banner{
-    width: 75%;
+    width: 80%;
   }
 }
 
 @media screen and (max-width:770px){
   .projSupp-banner{
-    width: 85%;
+    width: 90%;
   }
 }
 
 @media screen and (max-width:650px){
   .projSupp-banner{
-    width: 95%;
+    width: 97%;
   }
   .projSupp-sec{
     margin-top: 5rem;
   }
+  .projSupppSVC-title{
+    font-size: 1.1em;
+  }
+  
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:575px){
   .projSupp-banner{
     height: 6rem ;
     width: 100%;
@@ -58,11 +62,16 @@
     margin-top: 5rem;
   }
 }
+@media screen and (max-width:450px){
+  .projSupp-banner{
+    width: 90%;
+  }
+
+}
 
 @media screen and (max-width:400px){
-  .projSupp-banner{
-    height: 7rem ;
-    width: 95%;
+  .projSupppSVC-title{
+    font-size: 1em!important;
   }
   .projSupp-sec{
     margin-top: 7.5rem;

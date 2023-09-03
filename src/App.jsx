@@ -19,7 +19,19 @@ function App() {
   
   const isMobileScreen = useMediaQuery('(max-width:1100px)');
 
+   
+  {!isMobileScreen ? (window.onscroll = function(){scrollFunction()}) : ""};
   
+  
+
+  function scrollFunction() {
+    if (document.documentElement.scrollTop > 150) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-80px";
+    }
+  }
+
   
 
   return (

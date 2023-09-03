@@ -76,10 +76,13 @@
   .pipebanner{
     width: 55%;
   }
+
 }
 
 @media screen and (max-width: 1000px) {
-
+  .rescharSVC-banner3{
+    width: 45%;
+  }
   .pipebanner{
     width: 60%;
   }
@@ -129,6 +132,9 @@
   .pipebanner{
     width: 80%;
   }
+  .rescharSVC-banner3{
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -143,9 +149,7 @@
   .rescharSVC-banner2{
     width: 75%;
   }
-  .pipebanner{
-    width: 100%;
-  }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -156,7 +160,10 @@
     padding: 0 2rem;
   }
   .rescharSVC-banner2{
-    width: 95%;
+    width: 98%;
+  }
+  .rescharSVC-banner3{
+    width: 65%;
   }
   
 }
@@ -164,8 +171,7 @@
 @media screen and (max-width: 480px) {
 
   .pipebanner{
-    width: 100%;
-    height: 6rem;
+   width: 95%;
   }
   .inspec-sec2{
     margin-top: 6rem;
@@ -179,17 +185,31 @@
   .inspec-sec2{
     margin-top: 7rem;
   }
+  .pipe-title{
+    max-width: 250px;
+  }
+  .pipebanner{
+    width: 90%;
+   }
   
 }
 
 
 @media screen and (max-width: 400px) {
+  
   .reschar-sec, .inspec-sec, .pipingCert-sec{
     padding: 1rem;
   }
   .rescharSVC-topsec{
     padding: 1rem;
+    margin-top: 5rem;
   }
+  .rescharSVC-banner3{
+    width: 80%;
+  }
+  .pipebanner{
+    width: 95%;
+   }
   
 }
 

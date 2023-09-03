@@ -21,24 +21,24 @@ const PipingCertSVC = ({isMobileScreen}) => {
         </div>
         <div className="container drillSVC-container">
           <img className="drillSVC-icon" src={maint}></img>
-          <h1 className="drillSVC-title">Wellhead Maintenance and Repair</h1>       
+          <h1 className="drillSVC-title pipe-title">Wellhead Maintenance and Repair</h1>       
         </div>
       </section>
 
       <section>
         <div className="container">
-        <div className="inspec-sec inspec-sec2">
+        <div className="inspec-sec ">
           <p>
           ARG Integrated Energy is an international player in the wellhead maintenance services industry. We understand the 
           importance of providing our clients with the best inspection, repair, functionality testing and optimization and emergency intervention services. 
-          Complying will global standards such as API 570 piping inspection will help you operate efficiently as well as avoid potential risks, emergencies and loss.
+          Complying will global standards such as <b style={{color:"#35b416"}}>API 570</b>  piping inspection will help you operate efficiently as well as avoid potential risks, emergencies and loss.
           <br />
           <br />
           Downtime in operation can cost you huge sums by the hour. The best way to get the most of your wellheads is implementing a thorough routine 
           maintenance program. Our experts are well trained with standard safety regulation handbooks and hands on experience to meet the highest specifications of risk assessment.
           <br />
           <br />
-          ARG Integrated Energy is experienced in a multitude of AIP 570 wellhead applications and equipment to provide our clients independent, 
+          ARG Integrated Energy is experienced in a multitude of <b style={{color:"#35b416"}}>API 570</b> wellhead applications and equipment to provide our clients independent, 
           high quality maintenance services. Get well executed well head maintenance at an affordable price. Our handy service technicians 
           are responsive and will help you get your problems solved quickly.
           <br />

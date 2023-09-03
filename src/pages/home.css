@@ -264,6 +264,16 @@ background-color: white;
     width: 100%;
     height: auto;
   }
+  .services-section{
+    padding: 1rem;
+    width: 88%;
+  }
+  .serv-card{
+    width: 100%;
+    padding:0;
+    margin: auto;
+    box-shadow: none;
+  }
  
   .serv-title{
     font-size: 1.5em;
@@ -272,5 +282,4 @@ background-color: white;
     font-size: .8em;   
   }
 }
-
 
